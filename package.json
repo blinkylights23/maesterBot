@@ -12,7 +12,9 @@
   "dependencies": {
     "botkit": "0.0.12",
     "nconf": "^0.8.4",
-    "node-fetch": "^1.4.0"
+    "node-fetch": "^1.4.0",
+    "node-rest-client": "^1.8.0",
+    "speakeasy-nlp": "^0.2.2"
   },
   "devDependencies": {
     "nodemon": "^1.9.1"

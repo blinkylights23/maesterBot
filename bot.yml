@@ -1,0 +1,6 @@
+name: maesterBot
+description: Knows all about Westeros
+slackscopes:
+  - bot
+  - commands
+  - incoming-webhook

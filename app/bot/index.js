@@ -14,6 +14,9 @@ var bot = controller.spawn({
 
 var maesterBot = new MaesterBot();
 
-controller.hears(['hello','hi'], 'direct_message,direct_mention,mention', maesterBot.hello);
-controller.hears(['help'], 'direct_message,direct_mention,mention', maesterBot.help);
-controller.on('direct_message', maesterBot.question);
+controller.hears(['\bhello\b','\bhi\b'], 'direct_message,direct_mention,mention', maesterBot.hello);
+controller.hears(['\bhelp\b'], 'direct_message,direct_mention,mention', maesterBot.help);
+controller.hears(['^book\b\s*(.*)'], 'direct_message,direct_mention,mention', maesterBot.help);
+controller.hears(['^character\b\s*(.*)\s*(.*)'], 'direct_message,direct_mention,mention', maesterBot.help);
+controller.hears(['^house\b\s*(.*)\s*(.*)'], 'direct_message,direct_mention,mention', maesterBot.help);
+// controller.on('direct_message', maesterBot.question);

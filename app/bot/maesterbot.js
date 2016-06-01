@@ -27,6 +27,23 @@ var MaesterBot = class {
     });
   }
 
+  book(bot, message) {
+    let book = message.matched[1]
+    bot.reply(message, JSON.stringify({ book: book }));
+  }
+
+  character(bot, message) {
+    let character = message.matched[1]
+    let filter = message.matched[2]
+    bot.reply(message, JSON.stringify({ character: character, filter: filter }));
+  }
+
+  house(bot, message) {
+    let house = message.matched[1]
+    let filter = message.matched[2]
+    bot.reply(message, JSON.stringify({ house: house, filter: filter }));
+  }
+
   question(bot, message) {
     let parsedMsg = speak.classify(message.text);
     bot.reply(message, JSON.stringify(parsedMsg));

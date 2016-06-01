@@ -6,7 +6,7 @@ ENV \
   HOME=/maesterbot \
   ARCHIVEPATH=/usr/src/arch \
   NPM_CONFIG_LOGLEVEL=info \
-  NODE_VERSION=5.10.1
+  NODE_VERSION=6.2.0
 
 RUN \
   # Install required packages

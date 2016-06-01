@@ -1,24 +1,5 @@
 {
   "bot": {
-    "debug": false,
-    "games": "/games",
-    "saves": "/saves",
-    "terps": {
-      "glulxe": {
-        "path": "/terps/glulxe",
-        "glk": "remglk"
-      },
-      "bocfel": {
-        "path": "/terps/bocfel",
-        "glk": "remglk"
-      },
-      "dfrotz": {
-        "path": "/terps/dfrotz",
-        "glk": null
-      }
-    }
-  },
-  "redis": {
-    "url": "redis://redis:6379/0"
+    "debug": false
   }
 }

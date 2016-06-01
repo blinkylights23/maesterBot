@@ -8,7 +8,7 @@ var controller = botkit.slackbot({
 });
 
 var bot = controller.spawn({
-  token: config.get('SLACKBOT_TOKEN')
+  token: config.get('SLACK_TOKEN')
 }).startRTM();
 
 

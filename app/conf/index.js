@@ -8,7 +8,7 @@ var envVars = [
   'NODE_ENV',
   'NODE_PORT',
   'PORT',
-  'SLACKBOT_TOKEN'
+  'SLACK_TOKEN'
 ];
 
 var Config = function() {

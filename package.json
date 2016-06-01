@@ -1,0 +1,20 @@
+{
+  "name": "maesterBot",
+  "version": "1.0.0",
+  "description": "Knows all about Westeros",
+  "author": "Paul Smith <paul@paulsmith.io>",
+  "repository": "git@github.com:blinkylights23/maesterbot.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app/bot",
+    "nodemon": "nodemon app/bot"
+  },
+  "dependencies": {
+    "botkit": "0.0.12",
+    "nconf": "^0.8.4",
+    "node-fetch": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}

@@ -1,0 +1,18 @@
+*~
+*.bak
+*.py[cod]
+*.DS_Store
+*.orig
+*.po
+*.mo
+*.rdb
+*.db
+*.psd
+*.project
+.env
+.tern*
+.idea
+dockerenv
+
+# Application
+node_modules/

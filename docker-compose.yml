@@ -1,0 +1,8 @@
+bot:
+  build: .
+  env_file: dockerenv
+  ports:
+    - "3000"
+  volumes:
+    - ./app:/maesterbot/app
+  command: [npm, run-script, nodemon]

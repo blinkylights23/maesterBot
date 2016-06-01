@@ -36,9 +36,9 @@ class AaifClient {
   }
 
   registerEndpoints() {
-    client.registerMethod('books', apiUrl + '/books/${id}', 'GET');
-    client.registerMethod('characters', apiUrl + '/characters/${id}', 'GET');
-    client.registerMethod('houses', apiUrl + '/houses/${id}', 'GET');
+    this.client.registerMethod('books', apiUrl + '/books/${id}', 'GET');
+    this.client.registerMethod('characters', apiUrl + '/characters/${id}', 'GET');
+    this.client.registerMethod('houses', apiUrl + '/houses/${id}', 'GET');
   }
 
 }

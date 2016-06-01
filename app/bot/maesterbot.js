@@ -2,15 +2,16 @@
 
 var config = require('../conf'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    speak = require('speakeasy-nlp'),
+    AaifClient = require('./aaifClient');
 
 
 
-var AAIF = class {
+var MaesterBot = class {
 
   constructor() {
-    this.bot = null;
-    this.sessions = [];
+    this.aaifClient = new AaifClient();
   }
 
   hello(bot, message) {
@@ -26,7 +27,11 @@ var AAIF = class {
     });
   }
 
+  question(bot, message) {
+    bot.reply(message, 'Question');
+  }
+
 }
 
 
-module.exports = AAIF;
+module.exports = MaesterBot;

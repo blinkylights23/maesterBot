@@ -28,7 +28,8 @@ var MaesterBot = class {
   }
 
   question(bot, message) {
-    bot.reply(message, 'Question');
+    let parsedMsg = speak.classify(message.text);
+    bot.reply(message, JSON.stringify(parsedMsg));
   }
 
 }
